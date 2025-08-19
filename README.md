@@ -72,9 +72,9 @@ Grass background, non-transparent edges:
 
 ```{r}
 statsbomb %>%
-  filter(team.name == "France") %>%
+  dplyr::filter(team.name == "France") %>%
   soccerPassmap(fill = "blue", minPass = 3,
-                edge_max_width = 30, edge_col = "grey40", edge_alpha = 1,
+                maxEdgeSize = 30, edgeCol = "grey40", edgeAlpha = 1,
                 title = "France (vs Argentina, 30th June 2018)")
 ```
 
