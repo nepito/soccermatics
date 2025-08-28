@@ -49,7 +49,7 @@ Grass theme with custom colours:
 ```{r}
 statsbomb %>%
   filter(team.name == "Argentina") %>%
-  soccerShotmap(theme = "grass", colGoal = "yellow", colMiss = "blue", legend = T)
+  soccerShotmap(theme = "grass")
 ```
 
 
